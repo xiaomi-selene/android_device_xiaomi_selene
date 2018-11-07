@@ -299,6 +299,8 @@ PRODUCT_PACKAGES += \
     ueventd.mtk.rc
 
 # Runtime Resource (RRO) Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 PRODUCT_PACKAGES += \
     CarrierConfigOverlaySelene \
     FrameworksResOverlaySelene \
