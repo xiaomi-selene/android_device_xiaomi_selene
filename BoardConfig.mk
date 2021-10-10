@@ -52,6 +52,10 @@ TARGET_SCREEN_DENSITY := 440
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_selene
+TARGET_RECOVERY_DEVICE_MODULES := libinit_selene
+
 # Kernel
 BOARD_DTB_OFFSET := 0x0bc08000
 BOARD_KERNEL_BASE := 0x40078000
