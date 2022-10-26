@@ -557,6 +557,9 @@ on post-fs-data
     chown media system /dev/hdmitx
     chmod 0664 /dev/hdmitx
 
+    #FM
+    chmod 0777 /sys/class/fm/fm/lan_enable
+
     #ITO
     chmod 0777 /data/local/tmp
     
