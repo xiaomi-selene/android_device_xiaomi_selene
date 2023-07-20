@@ -274,6 +274,16 @@ PRODUCT_PACKAGES += \
     init.nfc.rc \
     ueventd.mtk.rc
 
+# Runtime Resource (RRO) Overlays
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlaySelene \
+    FrameworksResOverlaySelene \
+    SettingsOverlaySelene \
+    SystemUIOverlaySelene \
+    TelephonyOverlaySelene \
+    TetheringConfigOverlaySelene \
+    WifiOverlaySelene
+
 # Secure Element
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor
