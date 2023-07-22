@@ -247,6 +247,7 @@ PRODUCT_PACKAGES += \
     init.mt6768.rc \
     init.project.rc \
     init.sensor_1_0.rc \
+    init.target.rc \
     ueventd.mtk.rc
 
 # Sensors
