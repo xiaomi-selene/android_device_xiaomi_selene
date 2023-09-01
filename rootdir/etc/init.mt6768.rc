@@ -82,6 +82,10 @@ on charger
     start fuelgauged
     start fuelgauged_nvram
 
+    # Turn backlight on and switch to backlight trigger
+    write /sys/class/leds/lcd-backlight/brightness "1000"
+    write /sys/class/leds/lcd-backlight/trigger "backlight"
+
     chown system system /proc/nvt_pocket_palm_switch
     chmod 0660 /proc/nvt_pocket_palm_switch
 
