@@ -1096,15 +1096,6 @@ on property:persist.vendor.mediatek.fg.log.enable=1
     write /sys/bus/platform/devices/battery/FG_daemon_log_level 7
     write /proc/sys/kernel/printk 8
 # K19A-T code for HQ-269276 by miaozhichao at 2022/12/19 start
-service charger /system/bin/charger
-    class charger
-    user system
-    group system graphics wakelock input
-    capabilities SYS_BOOT
-    file /dev/kmsg w
-    file /sys/fs/pstore/console-ramoops-0 r
-    file /sys/fs/pstore/console-ramoops r
-    file /proc/last_kmsg r
 # K19A-T code for HQ-269276 by miaozhichao at 2022/12/19 end
 # add meta_tst for ATM
 service meta_tst /vendor/bin/meta_tst
