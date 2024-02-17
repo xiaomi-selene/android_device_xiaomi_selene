@@ -56,10 +56,6 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_selene
-TARGET_RECOVERY_DEVICE_MODULES := libinit_selene
-
 # Kernel (Flags)
 BOARD_DTB_OFFSET := 0x0bc08000
 BOARD_KERNEL_BASE := 0x40078000
@@ -149,7 +145,9 @@ BOARD_HAS_MTK_HARDWARE := true
 BOARD_VENDOR := xiaomi
 
 # Properties
+TARGET_ODM_PROP += $(DEVICE_PATH)/configs/props/odm.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/configs/props/system_ext.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
 # Recovery
