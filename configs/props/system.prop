@@ -1,3 +1,6 @@
+# Device specific properties
+import /system/etc/properties/${ro.boot.product.hardware.sku}.prop
+
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
