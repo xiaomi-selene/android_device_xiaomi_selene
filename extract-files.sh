@@ -99,7 +99,10 @@ function blob_fixup {
 	vendor/lib*/libmtkcam_stdutils.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             ;;
-	vendor/bin/mnld | \More actions
+        vendor/lib*/hw/audio.primary.mt6768.so)
+            "$PATCHELF" --replace-needed "libalsautils.so" "libalsautils-v31.so" "$2"
+            ;;
+	vendor/bin/mnld | \
 	vendor/lib*/libaalservice.so | \
 	vendor/lib64/libcam.utils.sensorprovider.so)
             "${PATCHELF}" --add-needed "libshim_sensors.so" "${2}"
