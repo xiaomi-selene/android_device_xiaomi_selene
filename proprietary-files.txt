@@ -27,6 +27,7 @@ vendor/lib/libaudiotoolkit_vendor.so
 vendor/lib/libMtkSpeechEnh.so
 vendor/lib/lib_iir.so
 vendor/lib/lib_speech_enh.so
+vendor/lib/libalsautils.so:vendor/lib/libalsautils-v31.so
 vendor/lib/libaal_cust.so
 vendor/lib/libaal_key.so
 vendor/lib/libapmonitor_vendor.so
