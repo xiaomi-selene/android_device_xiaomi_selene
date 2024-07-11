@@ -76,6 +76,7 @@ dalvik.vm.dex2oat64.enabled=true
 
 # Display
 debug.mediatek.appgamepq_compress=1
+debug.sf.auto_latch_unsignaled=1
 debug.sf.enable_gl_backpressure=0
 debug.sf.enable_hwc_vds=0
 debug.sf.enable_transaction_tracing=false
