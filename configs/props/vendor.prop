@@ -178,6 +178,9 @@ ro.vendor.mtk_video_hevc_enc_support=1
 vendor.media.omx=0
 vendor.mtk.vdec.waitkeyframeforplay=9
 
+# OEM Unlock
+ro.oem_unlock_supported=1
+
 # Properties
 ro.vendor.mediatek.platform=MT6768
 
