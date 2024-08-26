@@ -35,6 +35,9 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a55
 
+# Enable 64-bit for non-zygote.
+ZYGOTE_FORCE_64 := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := selene
 TARGET_NO_BOOTLOADER := true
