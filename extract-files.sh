@@ -76,6 +76,7 @@ function blob_fixup {
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.13-impl.so)
             [ "$2" = "" ] && return 0
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            "$PATCHELF" --replace-needed "libsensorndkbridge.so" "android.hardware.sensors@1.0-convert-shared.so" "${2}"
             ;;
         vendor/bin/hw/camerahalserver)
             [ "$2" = "" ] && return 0
@@ -117,7 +118,7 @@ function blob_fixup {
 	vendor/lib*/libaalservice.so | \
 	vendor/lib64/libcam.utils.sensorprovider.so)
             [ "$2" = "" ] && return 0
-            "${PATCHELF}" --add-needed "libshim_sensors.so" "${2}"
+            "$PATCHELF" --replace-needed "libsensorndkbridge.so" "android.hardware.sensors@1.0-convert-shared.so" "${2}"
             ;;
 	vendor/bin/hw/android.hardware.media.c2@1.2-mediatek)
             [ "$2" = "" ] && return 0
