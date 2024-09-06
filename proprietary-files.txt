@@ -1058,7 +1058,7 @@ vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
 vendor/bin/vpud
 vendor/etc/init/vpud.rc
 vendor/lib/AVCSecureVdecCA.so
-vendor/lib/libHEVCdec_sa.ca7.android.so
+vendor/lib/libHEVCdec_sa.ca7.android.so;DISABLE_CHECKELF
 vendor/lib/VP9SecureVdecCA.so
 vendor/lib/libcodec2_soft_mtk_alacdec.so
 vendor/lib/libcodec2_soft_mtk_apedec.so
@@ -1066,19 +1066,19 @@ vendor/lib/libcodec2_soft_mtk_imaadpcmdec.so
 vendor/lib/libcodec2_soft_mtk_mp3dec.so
 vendor/lib/libcodec2_soft_mtk_msadpcmdec.so
 vendor/lib/libh264dec_customize.so
-vendor/lib/libh264dec_sa.ca7.so
-vendor/lib/libh264dec_sd.ca7.so
-vendor/lib/libh264dec_se.ca7.so
-vendor/lib/libhevce_sb.ca7.android.so
-vendor/lib/libmp4enc_sa.ca7.so
-vendor/lib/libthha.so
+vendor/lib/libh264dec_sa.ca7.so;DISABLE_CHECKELF
+vendor/lib/libh264dec_sd.ca7.so;DISABLE_CHECKELF
+vendor/lib/libh264dec_se.ca7.so;DISABLE_CHECKELF
+vendor/lib/libhevce_sb.ca7.android.so;DISABLE_CHECKELF
+vendor/lib/libmp4enc_sa.ca7.so;DISABLE_CHECKELF
+vendor/lib/libthha.so;DISABLE_CHECKELF
 vendor/lib/libvcodec_oal.so
 vendor/lib/libvcodec_utility.so
 vendor/lib/libvcodecdrv.so
 vendor/lib/libvcodecdrv_header_stub.so
-vendor/lib/libvp8dec_sa.ca7.so
-vendor/lib/libvp8enc_sa.ca7.so
-vendor/lib/libvp9dec_sa.ca7.so
+vendor/lib/libvp8dec_sa.ca7.so;DISABLE_CHECKELF
+vendor/lib/libvp8enc_sa.ca7.so;DISABLE_CHECKELF
+vendor/lib/libvp9dec_sa.ca7.so;DISABLE_CHECKELF
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
 
@@ -1230,7 +1230,7 @@ system_ext/framework/mediatek-telecom-common.jar:system/framework/mediatek-telec
 system_ext/framework/mediatek-telephony-base.jar:system/framework/mediatek-telephony-base.jar|6c41573c211a4ad95a42ff0984296a3ad5bd0713
 system_ext/framework/mediatek-telephony-common.jar:system/framework/mediatek-telephony-common.jar|8c67dfb2dd784e4936149474f4132b0a78f4ed4c
 system_ext/lib64/libcomutils.so|13d7f1f134291c6ad365dd12364bfd32759e0869
-system_ext/lib64/libimsma.so|992f63e9700da29099e0590858a6becaaadb2976
+system_ext/lib64/libimsma.so;DISABLE_CHECKELF|992f63e9700da29099e0590858a6becaaadb2976
 system_ext/lib64/libimsma_adapt.so|3869d08a916b01fdf7c8ae8399f1a51c4cd35076
 system_ext/lib64/libimsma_rtp.so|91d7c0996133556cb7f7c5d1b7e5d9e7f07b78b2
 system_ext/lib64/libimsma_socketwrapper.so|ef8664d0470a98642b67a7ac56a42f44a12e2a85
@@ -1303,7 +1303,7 @@ vendor/lib/libteei_daemon_vfs.so
 vendor/lib64/libTEECommon.so
 vendor/lib64/libimsg_log.so
 vendor/lib64/libteei_daemon_vfs.so
-vendor/lib64/libthha.so
+vendor/lib64/libthha.so;DISABLE_CHECKELF
 vendor/thh/ta/020b0000000000000000000000000000.ta
 vendor/thh/ta/020f0000000000000000000000000000.ta
 vendor/thh/ta/05120000000000000000000000000000.ta
