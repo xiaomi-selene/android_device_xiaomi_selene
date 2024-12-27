@@ -26,7 +26,7 @@ PRODUCT_SYSTEM_DEVICE := selene
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="selene-user 13 TP1A.220624.014 V14.0.8.0.TKUINXM release-keys" \
+    BuildDesc="selene-user 13 TP1A.220624.014 V14.0.8.0.TKUINXM release-keys" \
     BuildFingerprint=Redmi/selene/selene:12/TP1A.220624.014/V14.0.8.0.TKUINXM:user/release-keys
     SystemModel=$(PRODUCT_SYSTEM_DEVICE) \
     SystemName=$(PRODUCT_SYSTEM_NAME) \
