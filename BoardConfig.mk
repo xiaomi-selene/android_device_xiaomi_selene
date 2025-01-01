@@ -6,6 +6,22 @@
 
 DEVICE_PATH := device/xiaomi/selene
 
+# A/B
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS += \
+    boot \
+    system \
+    system_dlkm \
+    system_ext \
+    product \
+    vendor \
+    vendor_dlkm \
+    odm \
+    odm_dlkm \
+    vbmeta \
+    vbmeta_system \
+    vbmeta_vendor
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
@@ -85,6 +101,9 @@ BOARD_USES_METADATA_PARTITION := true
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
 BOARD_HAS_MTK_HARDWARE := true
+
+# Recovery
+BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Inherit the proprietary files
 include vendor/xiaomi/selene/BoardConfigVendor.mk
