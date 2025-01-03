@@ -75,6 +75,16 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1.vendor \
     libbluetooth_audio_session
 
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@4.0.vendor \
+    android.hardware.graphics.composer@2.1-service \
+    android.hardware.memtrack@1.0-service \
+    android.hardware.memtrack@1.0-impl \
+
+PRODUCT_PACKAGES += \
+    libdrm.vendor
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
