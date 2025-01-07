@@ -231,6 +231,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
 
+# Recovery
+PRODUCT_PACKAGES += \
+    init.recovery.mt6768.rc
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6768 \
