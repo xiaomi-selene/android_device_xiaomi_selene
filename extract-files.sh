@@ -71,7 +71,7 @@ function blob_fixup {
             ;;
 	system_ext/lib64/libsink.so)
             [ "$2" = "" ] && return 0
-            "${PATCHELF}" --add-needed "libshim_sink.so" "${2}"
+            "${PATCHELF}" --add-needed "libaudioclient_shim.so" "${2}"
             ;;
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.13-impl.so)
             [ "$2" = "" ] && return 0

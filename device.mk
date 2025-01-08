@@ -305,7 +305,7 @@ PRODUCT_BOOT_JARS += \
 
 PRODUCT_PACKAGES += \
     libui_shim \
-    libshim_sink
+    libaudioclient_shim
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
