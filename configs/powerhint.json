@@ -456,6 +456,12 @@
      "Node": "CPUSuperClusterMinFreq",
      "Duration": 0,
      "Value": "850000"
+    },
+    {
+     "PowerHint": "DISPLAY_INACTIVE",
+     "Node": "GpuPwrLevel",
+     "Duration": 0,
+     "Value": "15"
     }
   ]
 }
