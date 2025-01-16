@@ -13,6 +13,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.modem.rc",
+    src: "etc/init.modem.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.mt6768.rc",
     src: "etc/init.mt6768.rc",
     sub_dir: "init/hw",
@@ -34,9 +41,9 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.recovery.mt6833.rc",
+    name: "init.recovery.mt6768.rc",
     recovery: true,
-    src: "etc/init.recovery.mt6833.rc",
+    src: "etc/init.recovery.mt6768.rc",
     sub_dir: "init",
 }
 
