@@ -1,0 +1,9 @@
+# Firmware - from selene-user 13 TP1A.220624.014 V14.0.8.0.TKUINXM release-keys
+
+lk.img;AB
+md1img.img;AB
+preloader.img:preloader_raw.img;AB
+scp.img;AB
+spmfw.img;AB
+sspm.img;AB
+tee.img;AB
