@@ -1,5 +1,6 @@
 # Audio
 genfscon sysfs /class/smartpa/re25_calib u:object_r:sysfs_re25_calib:s0
+genfscon sysfs /devices/platform/11d00000.i2c/i2c-0/0-005a/f0_value u:object_r:sysfs_f0_value:s0
 
 # Fingerprint
 genfscon sysfs /devices/platform/fingerprint                                             u:object_r:vendor_fingerprint_data_file:s0

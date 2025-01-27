@@ -1,5 +1,6 @@
 # Audio
 /dev/socket/audio_hw_socket                                                                            u:object_r:audio_socket:s0
+/dev/xlog                                                                                              u:object_r:sound_device:s0
 
 # Camera
 /data/vendor/camera(/.*)?                                                                            u:object_r:vendor_camera_data_file:s0
