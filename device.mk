@@ -175,7 +175,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.xiaomi
+    android.hardware.light-service.lineage
 
 # Media
 TARGET_SUPPORTS_OMX_SERVICE := false
