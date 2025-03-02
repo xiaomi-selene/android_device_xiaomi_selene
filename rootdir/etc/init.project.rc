@@ -13,6 +13,10 @@ on init
     mount ext4 /dev/block/platform/bootdevice/by-name/rescue /mnt/rescue noatime
     restorecon_recursive /mnt/rescue
 
+    # Set xiaomi touch permissions
+    chown system system /dev/xiaomi-touch
+    chmod 0660 /dev/xiaomi-touch
+
 on post-fs-data
 
 #Camera
