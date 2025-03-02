@@ -13,3 +13,10 @@ genfscon sysfs /devices/platform/11004000.i2c7/i2c-7/7-0060/tcpc/type_c_port0/du
 genfscon sysfs /devices/platform/battery/power_supply/bms/wakeup 								u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/mt_charger/power_supply/main/wakeup 								u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/input/input4/wakeup 										u:object_r:sysfs_wakeup:s0
+
+# GPU
+genfscon sysfs /kernel/gpu/gpu_min_clock u:object_r:vendor_sysfs_gpu:s0
+genfscon sysfs /kernel/gpu/gpu_max_clock u:object_r:vendor_sysfs_gpu:s0
+genfscon sysfs /devices/platform/13040000.mali/js_ctx_scheduling_mode u:object_r:vendor_sysfs_gpu:s0
+genfscon sysfs /devices/platform/13040000.mali/js_scheduling_period u:object_r:vendor_sysfs_gpu:s0
+genfscon sysfs /devices/platform/13040000.mali/dvfs_period u:object_r:vendor_sysfs_gpu:s0
