@@ -249,7 +249,6 @@ frameworks/native/data/etc/android.hardware.sensor.dynamic.head_tracker.xml:$(TA
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
     com.android.nfc_extras \
-    NfcNci \
     Tag
 
 PRODUCT_COPY_FILES += \
