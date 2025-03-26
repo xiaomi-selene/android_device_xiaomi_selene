@@ -130,6 +130,10 @@ function blob_fixup {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
             ;;
+        vendor/lib64/hw/hwcomposer.mt6768.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --add-needed "libprocessgroup_shim.so" "${2}"
+            ;;
         system_ext/lib64/libsource.so)
             [ "$2" = "" ] && return 0
             grep -q "libui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
