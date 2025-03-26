@@ -114,6 +114,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libdrm.vendor \
+    libprocessgroup_shim \
     libutils-v32
 
 # DRM
