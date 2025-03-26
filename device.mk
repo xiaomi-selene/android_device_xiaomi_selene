@@ -303,6 +303,7 @@ PRODUCT_BOOT_JARS += \
     mediatek-telephony-common
 
 PRODUCT_PACKAGES += \
+    libbase_shim \
     libui_shim \
     libaudioclient_shim
 
