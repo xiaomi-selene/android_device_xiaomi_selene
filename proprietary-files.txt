@@ -1154,6 +1154,10 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 # Public libraries
 vendor/etc/public.libraries.txt
 
+# Power
+vendor/lib64/vendor.mediatek.hardware.power@1.1.so
+vendor/lib64/vendor.mediatek.hardware.power@2.0.so
+
 # Radio
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
