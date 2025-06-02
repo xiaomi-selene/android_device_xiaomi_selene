@@ -150,3 +150,5 @@
 /sys/bus/platform/devices/fingerprint wakeup_enable 0600 system system
 /sys/bus/platform/devices/fingerprint  fingerdown_wait 0600 system system
 
+# Raw HID devices
+/dev/hidraw*                           0660   system     system
