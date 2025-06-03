@@ -78,6 +78,9 @@ function blob_fixup {
         vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc)
             echo "$(cat ${2}) input" > "${2}"
             ;;
+	vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml)
+	    sed -i 's/1.1/1.2/' "$2"
+            ;;
 	vendor/lib*/libmtkcam_stdutils.so|\
         vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "$2"
