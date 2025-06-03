@@ -60,7 +60,8 @@ PRODUCT_PACKAGES += \
     libaudiofoundation.vendor \
     libalsautils \
     libdynproc \
-    libhapticgenerator
+    libhapticgenerator \
+    libunwindstack.vendor
 
 PRODUCT_PACKAGES += \
     MtkInCallService
@@ -88,7 +89,9 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.6.vendor \
-    android.hardware.camera.provider@2.6.vendor
+    android.hardware.camera.provider@2.6.vendor \
+    libcamera_metadata.vendor \
+    libexif.vendor
 
 # ConsumerIr
 PRODUCT_PACKAGES += \
@@ -106,6 +109,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.memtrack@1.0-service \
     android.hardware.memtrack@1.0-impl \
+    libutilscallstack.vendor
 
 PRODUCT_PACKAGES += \
     libdrm.vendor \
@@ -134,6 +138,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
+PRODUCT_PACKAGES += \
+    libgatekeeper.vendor
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
@@ -146,7 +153,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor \
     android.hardware.gnss-V1-ndk.vendor \
-    android.hardware.gnss@2.1.vendor
+    android.hardware.gnss@2.1.vendor \
+    libcurl.vendor \
+    libexpat.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -171,6 +180,7 @@ PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \
     libcodec2_hidl@1.2.vendor \
     libcodec2_soft_common.vendor \
+    libion.vendor \
     libsfplugin_ccodec_utils.vendor \
     libstagefright_softomx_plugin.vendor \
     libstagefright_foundation-v33
@@ -378,7 +388,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0.vendor \
-    android.hardware.tetheroffload.control@1.1.vendor
+    android.hardware.tetheroffload.control@1.1.vendor \
+    libnetutils.vendor
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
