@@ -175,6 +175,8 @@ PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi
 
 # Media
+TARGET_SUPPORTS_OMX_SERVICE := false
+
 PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \
     libcodec2_hidl@1.2.vendor \
