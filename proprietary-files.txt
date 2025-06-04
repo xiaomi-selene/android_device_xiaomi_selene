@@ -1228,7 +1228,7 @@ vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 vendor/bin/hw/vtservice_hidl
 vendor/etc/init/init.vtservice_hidl.rc
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
-vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE=vendor.mediatek.hardware.videotelephony@1.0_vendor
 
 # Radio (SYSTEM-IMS) - from fire-user 14 UP1A.231005.007 V816.0.5.0.UMXINXM release-keys
 system_ext/bin/vtservice|6a950281499fdd13fc18ad5cf594df7168737ed4
