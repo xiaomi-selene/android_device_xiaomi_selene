@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+DEVICE_PATH := device/xiaomi/selene
+
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
@@ -67,7 +69,7 @@ PRODUCT_PACKAGES += \
     MtkInCallService
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
@@ -77,8 +79,8 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
-    $(LOCAL_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl \
+    $(DEVICE_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
+    $(DEVICE_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -101,7 +103,7 @@ PRODUCT_PACKAGES += \
 # Cgroup
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
-    $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
+    $(DEVICE_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
 # Display
 PRODUCT_PACKAGES += \
@@ -191,7 +193,7 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -251,8 +253,8 @@ PRODUCT_PACKAGES += \
     Tag
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf
+    $(DEVICE_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
+    $(DEVICE_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/android.hardware.nfc.xml \
@@ -270,21 +272,21 @@ PRODUCT_PACKAGES += \
     libmtkperf_client
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    $(DEVICE_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Power Off Alarm
 PRODUCT_PACKAGES += \
     PowerOffAlarm
 
 # Properties
-include $(LOCAL_PATH)/configs/props/vendor_logtag.mk
+include $(DEVICE_PATH)/configs/props/vendor_logtag.mk
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/board_id/odm,$(TARGET_COPY_OUT_ODM)/etc/properties) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/board_id/product,$(TARGET_COPY_OUT_PRODUCT)/etc/properties) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/board_id/system,$(TARGET_COPY_OUT_SYSTEM)/etc/properties) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/board_id/system_ext,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/properties) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/props/board_id/vendor,$(TARGET_COPY_OUT_VENDOR)/etc/properties)
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/props/board_id/odm,$(TARGET_COPY_OUT_ODM)/etc/properties) \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/props/board_id/product,$(TARGET_COPY_OUT_PRODUCT)/etc/properties) \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/props/board_id/system,$(TARGET_COPY_OUT_SYSTEM)/etc/properties) \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/props/board_id/system_ext,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/properties) \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/props/board_id/vendor,$(TARGET_COPY_OUT_VENDOR)/etc/properties)
 
 # Radio
 PRODUCT_PACKAGES += \
@@ -306,7 +308,7 @@ PRODUCT_PACKAGES += \
     libshim_sink
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
+    $(DEVICE_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
 
 # Recovery
 PRODUCT_PACKAGES += \
@@ -331,7 +333,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(DEVICE_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
     CarrierConfigOverlaySelene \
@@ -358,14 +360,14 @@ PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal:64
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+    $(DEVICE_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
+    $(DEVICE_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/lineage/interfaces/power-libperfmgr \
@@ -378,7 +380,7 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal-service.mediatek
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
+    $(DEVICE_PATH)/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
 
 # USB
 PRODUCT_PACKAGES += \
@@ -402,7 +404,7 @@ PRODUCT_PACKAGES += \
     libnetutils.vendor
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/selene/selene-vendor.mk)
