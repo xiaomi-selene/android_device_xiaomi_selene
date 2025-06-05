@@ -107,6 +107,12 @@ function blob_fixup {
             [ "$2" = "" ] && return 0
             "$PATCHELF" --replace-needed "libalsautils.so" "libalsautils-v31.so" "${2}"
             ;;
+        vendor/lib64/libSQLiteModule_VER_ALL.so | \
+        vendor/lib64/lib3a.flash.so | \
+        vendor/lib*/libteei_daemon_vfs.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --add-needed "liblog.so" "${2}"
+            ;;
 	vendor/bin/mnld | \
 	vendor/lib*/libaalservice.so | \
 	vendor/lib64/libcam.utils.sensorprovider.so)
