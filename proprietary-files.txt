@@ -894,8 +894,6 @@ vendor/lib/libgralloc_extra.so
 vendor/lib/libgralloc_metadata.so
 vendor/lib/libgralloctypes_mtk.so
 vendor/lib/libhdrvideo.so
-vendor/lib/libion_mtk.so
-vendor/lib/libion_ulit.so
 vendor/lib/libmml.so
 vendor/lib/libpq_cust_base.so
 vendor/lib/libpqframework.so
@@ -946,8 +944,6 @@ vendor/lib64/libgralloc_extra.so
 vendor/lib64/libgralloc_metadata.so
 vendor/lib64/libgralloctypes_mtk.so
 vendor/lib64/libhdrvideo.so
-vendor/lib64/libion_mtk.so
-vendor/lib64/libion_ulit.so
 vendor/lib64/libmml.so
 vendor/lib64/libpq_cust_base.so
 vendor/lib64/libpqframework.so
@@ -1052,6 +1048,12 @@ vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
 vendor/lib64/hw/gps.default.so
 vendor/lib64/libDR.so
 vendor/lib64/libmnl.so
+
+# ION from fire-user 15 AP3A.240905.015.A2 OS2.0.3.0.VMXMIXM release-keys
+vendor/lib/libion_mtk.so|c4de2b37d7aafb0d582f9a650c2635ea89571aec
+vendor/lib/libion_ulit.so|59d5a80fa86127c4a6d9c53c262afeb128ac1c8e
+vendor/lib64/libion_mtk.so|2b147356a223e69d3b66f738242d202f31bff91f
+vendor/lib64/libion_ulit.so|f94e14538eb7e2eb604fa762abcd564c01fa652b
 
 # Keymaster
 vendor/bin/bp_kmsetkey_ca
