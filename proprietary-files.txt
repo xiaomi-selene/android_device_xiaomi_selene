@@ -1221,14 +1221,14 @@ vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=_vendo
 # Radio (SYSTEM-IMS) - from fire-user 14 UP1A.231005.007 V816.0.5.0.UMXINXM release-keys
 system_ext/bin/vtservice|6a950281499fdd13fc18ad5cf594df7168737ed4
 system_ext/etc/init/init.vtservice.rc|ba534335eaa5cc473f0834315a47e15148895f17
-system_ext/framework/mediatek-common.jar:system/framework/mediatek-common.jar|4270e11cfcb97e9af386828b2ca4e81f54509f38
-system_ext/framework/mediatek-framework.jar:system/framework/mediatek-framework.jar|fd92629f5b43ac9619177774aebdebf6d444a0ff
-system_ext/framework/mediatek-ims-base.jar:system/framework/mediatek-ims-base.jar|53a8402d4faed5ca6aaf336f58e68aefd8119217
-system_ext/framework/mediatek-ims-common.jar:system/framework/mediatek-ims-common.jar|885f9a113d1437c9ca58c31ebaf26be5054ddc6f
-system_ext/framework/mediatek-ims-extension-plugin.jar:system/framework/mediatek-ims-extension-plugin.jar|0c300b95b4462d36db9e1c9da731ac6ee5139578
-system_ext/framework/mediatek-telecom-common.jar:system/framework/mediatek-telecom-common.jar|7aa45e25a2b3b3c874c9e07c45f41ecef842e918
-system_ext/framework/mediatek-telephony-base.jar:system/framework/mediatek-telephony-base.jar|6c41573c211a4ad95a42ff0984296a3ad5bd0713
-system_ext/framework/mediatek-telephony-common.jar:system/framework/mediatek-telephony-common.jar|8c67dfb2dd784e4936149474f4132b0a78f4ed4c
+system_ext/framework/mediatek-common.jar:system/framework/mediatek-common.jar;BOOT_JAR|4270e11cfcb97e9af386828b2ca4e81f54509f38
+system_ext/framework/mediatek-framework.jar:system/framework/mediatek-framework.jar;BOOT_JAR|fd92629f5b43ac9619177774aebdebf6d444a0ff
+system_ext/framework/mediatek-ims-base.jar:system/framework/mediatek-ims-base.jar;BOOT_JAR|53a8402d4faed5ca6aaf336f58e68aefd8119217
+system_ext/framework/mediatek-ims-common.jar:system/framework/mediatek-ims-common.jar;BOOT_JAR|885f9a113d1437c9ca58c31ebaf26be5054ddc6f
+system_ext/framework/mediatek-ims-extension-plugin.jar:system/framework/mediatek-ims-extension-plugin.jar;BOOT_JAR|0c300b95b4462d36db9e1c9da731ac6ee5139578
+system_ext/framework/mediatek-telecom-common.jar:system/framework/mediatek-telecom-common.jar;BOOT_JAR|7aa45e25a2b3b3c874c9e07c45f41ecef842e918
+system_ext/framework/mediatek-telephony-base.jar:system/framework/mediatek-telephony-base.jar;BOOT_JAR|6c41573c211a4ad95a42ff0984296a3ad5bd0713
+system_ext/framework/mediatek-telephony-common.jar:system/framework/mediatek-telephony-common.jar;BOOT_JAR|8c67dfb2dd784e4936149474f4132b0a78f4ed4c
 system_ext/lib64/libcomutils.so|13d7f1f134291c6ad365dd12364bfd32759e0869
 system_ext/lib64/libimsma.so;DISABLE_CHECKELF|992f63e9700da29099e0590858a6becaaadb2976
 system_ext/lib64/libimsma_adapt.so|3869d08a916b01fdf7c8ae8399f1a51c4cd35076
