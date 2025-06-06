@@ -294,15 +294,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor
 
 # Radio (IMS)
-PRODUCT_BOOT_JARS += \
-    mediatek-common \
-    mediatek-framework \
-    mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common
-
 PRODUCT_PACKAGES += \
     libbase_shim \
     libui_shim \
