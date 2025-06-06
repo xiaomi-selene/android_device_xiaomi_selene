@@ -1257,14 +1257,17 @@ vendor/lib64/libhwm.so
 vendor/lib64/libksensor.so
 vendor/lib64/libsensor_custom.so
 
-# Tether Offload
-vendor/bin/hw/tetheroffloadservice
-vendor/bin/netdagent
-vendor/etc/init/netdagent.rc
-vendor/etc/init/tetheroffloadservice.rc
-vendor/lib64/libforkexecwrap.so
-vendor/lib64/libifcutils_mtk.so
-vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+# Tether Offload - from fire-user 15 AP3A.240905.015.A2 OS2.0.3.0.VMXMIXM release-keys
+vendor/bin/hw/tetheroffloadservice|e6e0fb71f6587dea35863ae947cb1a3c2cae38d6
+vendor/bin/netdagent|6946341ca38b873885d1eee62f24950e3ac60daf
+vendor/etc/init/android.hardware.tetheroffload-V1-service.rc|6fc5b85acc5e15fb8bb6d9a85d497df05d98e619
+vendor/etc/init/netdagent.rc|36b37c99b262ceee76dec59b395fb5bb5dd94cf3
+vendor/etc/vintf/manifest/CommandService.xml|6499f7a0b74eeea32fb1f587766df8ab42685d57
+vendor/etc/vintf/manifest/android.hardware.tetheroffload-V1-service.xml|68c5b9ffc5f7899a4a2012ae4c87f3e59191ce36
+vendor/lib64/libforkexecwrap.so|acfb7b3345a35521716b3dddb32f2bf1f62046e2
+vendor/lib64/libifcutils_mtk.so|1d54e51eb757a6d68ce117723b488d995079102f
+vendor/lib64/vendor.mediatek.hardware.netdagent-V1-ndk.so|5f77e3770ee70706dacb5ccb5d27e283af2d6eca
+vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so|52ae310a85ed1e4d51ac9a066f7ff115e0870a00
 
 # Thermal
 vendor/bin/mi_thermald
