@@ -69,9 +69,13 @@ function blob_fixup {
             [ "$2" = "" ] && return 0
             apktool_patch "${2}" "${MY_DIR}/blob-patches/ImsService.patch" -r
             ;;
-	system_ext/lib64/libsink.so)
+	system_ext/lib64/libsink-mtk.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --add-needed "libaudioclient_shim.so" "${2}"
+            ;;
+        system_ext/lib64/libimsma.so)
+            [ "$2" = "" ] && return 0
+            "$PATCHELF" --replace-needed "libsink.so" "libsink-mtk.so" "${2}"
             ;;
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.13-impl.so)
             [ "$2" = "" ] && return 0
