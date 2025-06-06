@@ -52,7 +52,6 @@ vendor/lib/libaurisysdemo.so
 vendor/lib/libbessound_hd_mtk_vendor.so
 vendor/lib/libblisrc32_vendor.so
 vendor/lib/libbwc.so
-vendor/lib/libladder.so
 vendor/lib/libmsbc_mtk.so
 vendor/lib/libmtklimiter_vendor.so
 vendor/lib/libmtkshifter_vendor.so
@@ -893,7 +892,6 @@ vendor/lib/libgralloctypes_mtk.so
 vendor/lib/libhdrvideo.so
 vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
-vendor/lib/libladder.so
 vendor/lib/libmml.so
 vendor/lib/libpq_cust_base.so
 vendor/lib/libpqframework.so
@@ -946,7 +944,6 @@ vendor/lib64/libgralloctypes_mtk.so
 vendor/lib64/libhdrvideo.so
 vendor/lib64/libion_mtk.so
 vendor/lib64/libion_ulit.so
-vendor/lib64/libladder.so
 vendor/lib64/libmml.so
 vendor/lib64/libpq_cust_base.so
 vendor/lib64/libpqframework.so
@@ -972,6 +969,10 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.6.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
+
+# Display (Thread unwinding) - from fire-user 15 AP3A.240905.015.A2 OS2.0.3.0.VMXMIXM release-keys
+vendor/lib/libladder.so|02a66f62747a06ffc79c22d788b52a7804e7fd42 
+vendor/lib64/libladder.so|db21530e99b7838e93d8f30926a9208a447bf502
 
 # Display Firmware
 vendor/firmware/focaltech_mp_fw_huaxing.ini
