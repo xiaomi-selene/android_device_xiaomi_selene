@@ -22,6 +22,8 @@ export TARGET_ENABLE_CHECKELF=true
 # Can still be used with broken XML files by using blob_fixup
 export TARGET_DISABLE_XML_FIXING=true
 
+export PATCHELF_VERSION=0_17_2
+
 HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
@@ -75,12 +77,12 @@ function blob_fixup {
             ;;
         system_ext/lib64/libimsma.so)
             [ "$2" = "" ] && return 0
-            "$PATCHELF" --replace-needed "libsink.so" "libsink-mtk.so" "${2}"
+            "${PATCHELF}" --replace-needed "libsink.so" "libsink-mtk.so" "${2}"
             ;;
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.13-impl.so)
             [ "$2" = "" ] && return 0
-            "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
-            "$PATCHELF" --replace-needed "libsensorndkbridge.so" "android.hardware.sensors@1.0-convert-shared.so" "${2}"
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            "${PATCHELF}" --replace-needed "libsensorndkbridge.so" "android.hardware.sensors@1.0-convert-shared.so" "${2}"
             ;;
         vendor/bin/hw/camerahalserver)
             [ "$2" = "" ] && return 0
@@ -89,11 +91,11 @@ function blob_fixup {
 	vendor/bin/hw/android.hardware.gnss-service.mediatek | \
         vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
             [ "$2" = "" ] && return 0
-            "$PATCHELF" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "${2}"
+            "${PATCHELF}" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "${2}"
             ;;
 	vendor/bin/hw/android.hardware.memtrack-service.mediatek)
             [ "$2" = "" ] && return 0
-            "$PATCHELF" --replace-needed "android.hardware.memtrack-V1-ndk_platform.so" "android.hardware.memtrack-V1-ndk.so" "${2}"
+            "${PATCHELF}" --replace-needed "android.hardware.memtrack-V1-ndk_platform.so" "android.hardware.memtrack-V1-ndk.so" "${2}"
             ;;
         vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc)
             [ "$2" = "" ] && return 0
@@ -110,7 +112,7 @@ function blob_fixup {
             ;;
         vendor/lib*/hw/audio.primary.mt6768.so)
             [ "$2" = "" ] && return 0
-            "$PATCHELF" --replace-needed "libalsautils.so" "libalsautils-v31.so" "${2}"
+            "${PATCHELF}" --replace-needed "libalsautils.so" "libalsautils-v31.so" "${2}"
             ;;
         vendor/lib64/libSQLiteModule_VER_ALL.so | \
         vendor/lib64/lib3a.flash.so | \
@@ -122,7 +124,7 @@ function blob_fixup {
 	vendor/lib*/libaalservice.so | \
 	vendor/lib64/libcam.utils.sensorprovider.so)
             [ "$2" = "" ] && return 0
-            "$PATCHELF" --replace-needed "libsensorndkbridge.so" "android.hardware.sensors@1.0-convert-shared.so" "${2}"
+            "${PATCHELF}" --replace-needed "libsensorndkbridge.so" "android.hardware.sensors@1.0-convert-shared.so" "${2}"
             ;;
 	vendor/bin/hw/android.hardware.media.c2@1.2-mediatek)
             [ "$2" = "" ] && return 0
