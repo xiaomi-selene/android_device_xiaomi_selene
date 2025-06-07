@@ -100,8 +100,7 @@ PRODUCT_PACKAGES += \
 
 # ConsumerIr
 PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-impl \
-    android.hardware.ir@1.0-service
+    android.hardware.ir-service.lineage
 
 # Cgroup
 PRODUCT_COPY_FILES += \
