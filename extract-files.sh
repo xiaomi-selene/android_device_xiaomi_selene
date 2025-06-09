@@ -105,6 +105,15 @@ function blob_fixup {
             [ "$2" = "" ] && return 0
 	    sed -i 's/1.1/1.2/' "${2}"
             ;;
+        vendor/lib64/libalLDC.so|\
+        vendor/lib64/libalhLDC.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --clear-symbol-version "AHardwareBuffer_allocate" "${2}"
+            "${PATCHELF}" --clear-symbol-version "AHardwareBuffer_describe" "${2}"
+            "${PATCHELF}" --clear-symbol-version "AHardwareBuffer_lock" "${2}"
+            "${PATCHELF}" --clear-symbol-version "AHardwareBuffer_release" "${2}"
+            "${PATCHELF}" --clear-symbol-version "AHardwareBuffer_unlock" "${2}"
+            ;;
 	vendor/lib*/libmtkcam_stdutils.so|\
         vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so)
             [ "$2" = "" ] && return 0
