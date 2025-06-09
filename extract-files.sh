@@ -114,6 +114,12 @@ function blob_fixup {
             "${PATCHELF}" --clear-symbol-version "AHardwareBuffer_release" "${2}"
             "${PATCHELF}" --clear-symbol-version "AHardwareBuffer_unlock" "${2}"
             ;;
+        vendor/lib/libvcodec_oal.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --clear-symbol-version "__aeabi_memcpy" "${2}"
+            "${PATCHELF}" --clear-symbol-version "__aeabi_memset" "${2}"
+            "${PATCHELF}" --clear-symbol-version "__gnu_Unwind_Find_exidx" "${2}"
+            ;;
 	vendor/lib*/libmtkcam_stdutils.so|\
         vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so)
             [ "$2" = "" ] && return 0
