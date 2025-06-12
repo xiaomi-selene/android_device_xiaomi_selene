@@ -105,6 +105,9 @@ function blob_fixup {
             [ "$2" = "" ] && return 0
 	    sed -i 's/1.1/1.2/' "${2}"
             ;;
+        vendor/lib64/libmnl.so)
+            "${PATCHELF}" --add-needed "libcutils.so" "${2}"
+            ;;
         vendor/lib64/libalLDC.so|\
         vendor/lib64/libalhLDC.so)
             [ "$2" = "" ] && return 0
