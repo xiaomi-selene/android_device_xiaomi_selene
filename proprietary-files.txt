@@ -512,12 +512,6 @@ vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbluetooth_mtk_pure.so
 vendor/lib64/libbt-vendor.so
 
-# Bluetooth (A2DP)
-vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
-vendor/lib/libbluetooth_audio_session_mediatek.so
-vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
-vendor/lib64/libbluetooth_audio_session_mediatek.so
-
 # Bluetooth (Firmware) - from a06xx-user 14 UP1A.231005.007 A065FXXS2AXJ2 release-keys
 vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin|49edf94baf8c354ffa6c84f27f204439b8557377
 
