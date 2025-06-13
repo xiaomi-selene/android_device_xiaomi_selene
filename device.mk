@@ -188,7 +188,7 @@ PRODUCT_PACKAGES += \
 TARGET_SUPPORTS_OMX_SERVICE := false
 
 PRODUCT_PACKAGES += \
-    libavservices_minijail_vendor \
+    libavservices_minijail.vendor \
     libcodec2_hidl@1.2.vendor \
     libcodec2_soft_common.vendor \
     libion.vendor \
