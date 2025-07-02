@@ -144,7 +144,11 @@ function blob_fixup {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libsensorndkbridge.so" "android.hardware.sensors@1.0-convert-shared.so" "${2}"
             ;;
-	vendor/bin/hw/android.hardware.media.c2@1.2-mediatek)
+	vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc)
+            [ -z "$2" ] && return 0
+            grep -q "mediatek-64b" "${2}" || sed -i 's/mediatek/mediatek-64b/' "${2}"
+            ;;
+	vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             "${PATCHELF}" --replace-needed "libavservices_minijail_vendor.so" "libavservices_minijail.so" "${2}"
