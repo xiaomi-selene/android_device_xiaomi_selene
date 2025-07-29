@@ -67,18 +67,6 @@ fi
 
 function blob_fixup {
     case "${1}" in
-        system_ext/priv-app/ImsService/ImsService.apk)
-            [ "$2" = "" ] && return 0
-            apktool_patch "${2}" "${MY_DIR}/blob-patches/ImsService.patch" -r
-            ;;
-	system_ext/lib64/libsink-mtk.so)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF}" --add-needed "libaudioclient_shim.so" "${2}"
-            ;;
-        system_ext/lib64/libimsma.so)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF}" --replace-needed "libsink.so" "libsink-mtk.so" "${2}"
-            ;;
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.13-impl.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
@@ -165,10 +153,6 @@ function blob_fixup {
             ;;
         vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so)
             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
-            ;;
-        system_ext/lib64/libsource.so)
-            [ "$2" = "" ] && return 0
-            grep -q "libui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
             ;;
         *)
             return 1
