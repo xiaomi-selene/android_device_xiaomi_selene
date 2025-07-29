@@ -80,6 +80,7 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
 TARGET_KERNEL_SOURCE := kernel/xiaomi/selene
 TARGET_KERNEL_CONFIG := selene_defconfig
+TARGET_KERNEL_NO_GCC := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 
 BOARD_MKBOOTIMG_ARGS := --base $(BOARD_KERNEL_BASE)
