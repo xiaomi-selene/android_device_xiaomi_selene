@@ -90,6 +90,7 @@ BOARD_MKBOOTIMG_ARGS += --board ""
 # Kernel (Source)
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
+TARGET_KERNEL_NO_GCC := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/selene
 TARGET_KERNEL_CONFIG := selene_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz
