@@ -503,13 +503,11 @@ vendor/etc/audio_param_k19a_ce/VoWVoiceCommand_ParamUnitDesc.xml
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
 vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
 vendor/firmware/BT_FW.cfg
+vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin
 vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
 vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbluetooth_mtk_pure.so
 vendor/lib64/libbt-vendor.so
-
-# Bluetooth (Firmware) - from a06xx-user 14 UP1A.231005.007 A065FXXS2AXJ2 release-keys
-vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin|49edf94baf8c354ffa6c84f27f204439b8557377
 
 # Camera
 vendor/bin/hw/camerahalserver
@@ -841,11 +839,9 @@ vendor/lib64/hw/consumerir.common.so
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
 vendor/firmware/WMT_SOC.cfg
+vendor/firmware/soc1_0_ram_mcu_1a_1_hdr.bin
 vendor/firmware/soc1_0_patch_mcu_1a_1_hdr.bin
 vendor/firmware/txpowerctrl.cfg
-
-# Connectivity (Firmware) - from a06xx-user 14 UP1A.231005.007 A065FXXS2AXJ2 release-keys
-vendor/firmware/soc1_0_ram_mcu_1a_1_hdr.bin|4fe741d7e2d9567285a31196a42b15220665c58a
 
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
@@ -1291,9 +1287,7 @@ vendor/firmware/awinic_params.bin
 # Wi-Fi
 vendor/bin/wlan_assistant
 vendor/etc/init/wlan_assistant.rc
+vendor/firmware/WIFI_RAM_CODE_soc1_0_1a_1.bin
 vendor/firmware/soc1_0_ram_wifi_1a_1_hdr.bin
 vendor/firmware/wifi.cfg
 vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
-
-# Wi-Fi (Firmware) - from a06xx-user 14 UP1A.231005.007 A065FXXS2AXJ2 release-keys
-vendor/firmware/WIFI_RAM_CODE_soc1_0_1a_1.bin|3f2b531226f7d366802deb820023118fc9a8a4be
