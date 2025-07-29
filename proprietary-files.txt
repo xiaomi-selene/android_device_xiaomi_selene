@@ -29,7 +29,9 @@ vendor/lib/lib_iir.so
 vendor/lib/lib_speech_enh.so
 vendor/lib/libalsautils.so:vendor/lib/libalsautils-v31.so;FIX_SONAME
 vendor/lib/libaal_cust.so
+vendor/lib/libaal_mtk.so
 vendor/lib/libaal_key.so
+vendor/lib/libadpcmdec_mtk.so
 vendor/lib/libapmonitor_vendor.so
 vendor/lib/libappgamepq.so
 vendor/lib/libapu_mdw.so
@@ -1010,6 +1012,7 @@ vendor/etc/init/vpud.rc
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/libHEVCdec_sa.ca7.android.so;DISABLE_CHECKELF
 vendor/lib/VP9SecureVdecCA.so
+vendor/lib/libcodec2_mtk_c2store.so
 vendor/lib/libcodec2_soft_mtk_alacdec.so
 vendor/lib/libcodec2_soft_mtk_apedec.so
 vendor/lib/libcodec2_soft_mtk_imaadpcmdec.so
