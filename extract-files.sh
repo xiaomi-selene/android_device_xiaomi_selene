@@ -76,6 +76,10 @@ function blob_fixup {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
+        vendor/bin/hw/mtkfusionrild)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --add-needed "libutils-v32.so" "${2}"
+            ;;
 	vendor/bin/hw/android.hardware.gnss-service.mediatek | \
         vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
             [ "$2" = "" ] && return 0
