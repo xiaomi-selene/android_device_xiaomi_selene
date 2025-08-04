@@ -334,7 +334,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay-lineage
+    $(DEVICE_PATH)/overlay-voltage
 
 PRODUCT_PACKAGES += \
     CarrierConfigOverlaySelene \
