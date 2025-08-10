@@ -513,12 +513,6 @@ vendor/lib64/libbt-vendor.so
 # Bluetooth (Firmware) - from A145PXXU1AWA3
 vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin|9cd0d79cde76a59ddd8545b1621af1176c5f9605
 
-# Bluetooth (A2DP)
-vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
-vendor/lib/libbluetooth_audio_session_mediatek.so
-vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
-vendor/lib64/libbluetooth_audio_session_mediatek.so
-
 # Camera
 vendor/bin/hw/camerahalserver
 vendor/bin/lib3a.ccu.dm
