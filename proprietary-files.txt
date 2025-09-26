@@ -1254,11 +1254,6 @@ vendor/thh/ta/isee_model.json
 vendor/lib/libudf.so|6cafef46fd4c59af1aafc9a4ce91c7f53aabc661
 vendor/lib64/libudf.so|3f20822e12d875409be8b963055558636dc2cb47
 
-# USB
-vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
-vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
--vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
-
 # Vibrator
 vendor/firmware/awinic_params.bin
 
