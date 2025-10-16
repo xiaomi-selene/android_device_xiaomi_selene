@@ -105,6 +105,10 @@ PRODUCT_PACKAGES += \
     libmemunreachable.vendor \
     libexif.vendor
 
+# Charger
+PRODUCT_PACKAGES += \
+    libsuspend
+
 # ConsumerIr
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
