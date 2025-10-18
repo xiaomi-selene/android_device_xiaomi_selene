@@ -7,3 +7,6 @@ type vendor_sysfs_gpu, fs_type, sysfs_type;
 
 # Fingerprint
 type vendor_fingerprint_data_file, fs_type, sysfs_type;
+
+# Sensors
+type sysfs_touchpanel, fs_type, sysfs_type;
