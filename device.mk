@@ -341,7 +341,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlaySelene \
     FrameworksResOverlaySelene \
     SettingsOverlaySelene \
     SystemUIOverlaySelene \
