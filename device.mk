@@ -342,7 +342,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay-voltage
 
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlaySelene \
     FrameworksResOverlaySelene \
     SettingsOverlaySelene \
     SystemUIOverlaySelene \
