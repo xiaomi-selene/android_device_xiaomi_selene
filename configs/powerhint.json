@@ -351,6 +351,11 @@
     },
     {
       "PowerHint": "GAME",
+      "Type": "EndHint",
+      "Value": "INTERACTION"
+    },
+    {
+      "PowerHint": "GAME",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
       "Value": "9999999"
@@ -422,46 +427,52 @@
       "Value": "0-2"
     },
     {
-     "PowerHint": "DISPLAY_INACTIVE",
-     "Node": "TopAppCpuset",
-     "Duration": 0,
-     "Value": "0-3"
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "TopAppCpuset",
+      "Duration": 0,
+      "Value": "0-3"
     },
     {
-     "PowerHint": "DISPLAY_IDLE",
-     "Node": "ForegroundWindowCpuset",
-     "Duration": 0,
-     "Value": "0-2"
+      "PowerHint": "DISPLAY_IDLE",
+      "Node": "ForegroundWindowCpuset",
+      "Duration": 0,
+      "Value": "0-2"
     },
     {
-     "PowerHint": "DISPLAY_IDLE",
-     "Node": "RestrictedCpuset",
-     "Duration": 0,
-     "Value": "0-3"
+      "PowerHint": "DISPLAY_IDLE",
+      "Node": "RestrictedCpuset",
+      "Duration": 0,
+      "Value": "0-3"
     },
     {
-     "PowerHint": "DISPLAY_IDLE",
-     "Node": "TopAppCpuset",
-     "Duration": 0,
-     "Value": "0-3"
+      "PowerHint": "DISPLAY_IDLE",
+      "Node": "TopAppCpuset",
+      "Duration": 0,
+      "Value": "0-3"
     },
     {
-     "PowerHint": "DISPLAY_INACTIVE",
-     "Node": "CPUEfficiencyClusterMinFreq",
-     "Duration": 0,
-     "Value": "500000"
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "CPUEfficiencyClusterMinFreq",
+      "Duration": 0,
+      "Value": "500000"
     },
     {
-     "PowerHint": "DISPLAY_INACTIVE",
-     "Node": "CPUSuperClusterMinFreq",
-     "Duration": 0,
-     "Value": "850000"
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "CPUSuperClusterMinFreq",
+      "Duration": 0,
+      "Value": "850000"
     },
     {
-     "PowerHint": "DISPLAY_INACTIVE",
-     "Node": "GpuPwrLevel",
-     "Duration": 0,
-     "Value": "15"
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "GpuPwrLevel",
+      "Duration": 0,
+      "Value": "15"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "RestrictedCpuset",
+      "Duration": 0,
+      "Value": "0-3"
     }
   ]
 }
