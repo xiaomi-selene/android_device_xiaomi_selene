@@ -472,6 +472,20 @@
          Note that a physical cutout should be configured in pixels for the best results. -->
     <string name="config_mainBuiltInDisplayCutout">M 0,0 H -35 V 103 H 35 V 0 H 0 Z</string>
 
+    <!-- Enable doze alwaysOn Display -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+
+    <!-- Control whether the always on display mode is enabled by default. This value will be used
+         during initialization when the setting is still null. -->
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
+
+    <!-- True if the display hardware only has brightness buckets rather than a full range of
+         backlight values -->
+    <bool name="config_displayBrightnessBucketsInDoze">true</bool>
+
+    <!-- If true, the display will be shifted around in ambient mode. -->
+    <bool name="config_enableBurnInProtection">true</bool>
+
     <!-- The default refresh rate. sweet manages this using the peak refresh rate setting, so set
          this value to 0 so it has no effect. -->
     <integer name="config_defaultRefreshRate">0</integer>
