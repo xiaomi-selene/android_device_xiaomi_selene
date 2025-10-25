@@ -5,6 +5,7 @@
 #
 
 DEVICE_PATH := device/xiaomi/selene
+FIRMWARE_PATH := vendor/xiaomi/selene/proprietary/vendor/firmware
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
@@ -319,6 +320,15 @@ PRODUCT_PACKAGES += \
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.mt6768.rc
+
+PRODUCT_COPY_FILES += \
+    $(FIRMWARE_PATH)/focaltech_ts_fw_.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_ts_fw_.bin \
+    $(FIRMWARE_PATH)/focaltech_ts_fw_huaxing.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_ts_fw_huaxing.bin \
+    $(FIRMWARE_PATH)/focaltech_ts_fw_xinli.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_ts_fw_xinli.bin \
+    $(FIRMWARE_PATH)/mt6631_fm_v1_coeff.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/mt6631_fm_v1_coeff.bin \
+    $(FIRMWARE_PATH)/mt6631_fm_v1_patch.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/mt6631_fm_v1_patch.bin \
+    $(FIRMWARE_PATH)/novatek_ts_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_fw.bin \
+    $(FIRMWARE_PATH)/novatek_ts_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_mp.bin
 
 # Rootdir
 PRODUCT_PACKAGES += \
