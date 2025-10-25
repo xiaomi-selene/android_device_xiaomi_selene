@@ -938,7 +938,6 @@ vendor/lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/fingerprint.goodix.def
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
-vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
 
 # FM
 vendor/firmware/fm_cust.cfg
@@ -1140,6 +1139,7 @@ vendor/lib64/libmtksysutils.so
 vendor/lib64/libmtktinyxml.so
 vendor/lib64/libmtkutils.so
 vendor/lib64/libratconfig.so
+vendor/lib64/librpc.so
 vendor/lib64/librilfusion.so
 vendor/lib64/libstorage_otp.so
 vendor/lib64/libsysenv.so
