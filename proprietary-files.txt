@@ -59,6 +59,7 @@ vendor/lib/libmtklimiter_vendor.so
 vendor/lib/libmtkshifter_vendor.so
 vendor/lib/libnxp_extamp_intf.so
 vendor/lib/librt_extamp_intf.so
+vendor/lib64/librpc.so
 vendor/lib/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib/libspeechparser_vendor.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
