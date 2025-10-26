@@ -68,3 +68,24 @@ on enable-low-power
 
 on property:sys.boot_completed=1
     trigger enable-low-power
+
+    # Power Hal
+    chown system system /proc/ppm/policy/cluster_0_max_freq
+    chown system system /proc/ppm/policy/cluster_0_min_freq
+    chown system system /proc/ppm/policy/cluster_1_max_freq
+    chown system system /proc/ppm/policy/cluster_1_min_freq
+    chown system system /dev/cpuctl/foreground/cpu.uclamp.min
+    chown system system /dev/cpuctl/top-app/cpu.uclamp.min
+    chown system system /dev/cpuctl/camera-daemon/cpu.uclamp.min
+    chown system system /proc/perfmgr/boost_ctrl/eas_ctrl/sched_boost
+    chown system system /sys/touchpanel/double_tap
+
+    chmod 0664 /proc/ppm/policy/cluster_0_max_freq
+    chmod 0664 /proc/ppm/policy/cluster_0_min_freq
+    chmod 0664 /proc/ppm/policy/cluster_1_max_freq
+    chmod 0664 /proc/ppm/policy/cluster_1_min_freq
+    chmod 0664 /dev/cpuctl/foreground/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/top-app/cpu.uclamp.min
+    chmod 0664 /dev/cpuctl/camera-daemon/cpu.uclamp.min
+    chmod 0664 /proc/perfmgr/boost_ctrl/eas_ctrl/sched_boost
+    chmod 0664 /sys/touchpanel/double_tap
