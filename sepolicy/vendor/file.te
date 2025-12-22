@@ -8,6 +8,9 @@ type sysfs_re25_calib, fs_type, sysfs_type;
 type camera_persist_file, file_type;
 type vendor_camera_data_file, data_file_type, file_type;
 
+# Display
+type sysfs_display, sysfs_type, fs_type;
+
 # GPU
 type vendor_sysfs_gpu, fs_type, sysfs_type;
 
