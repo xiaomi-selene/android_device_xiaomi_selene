@@ -502,7 +502,6 @@ vendor/etc/audio_param_k19a_ce/VoWVoiceCommand_ParamUnitDesc.xml
 # Bluetooth
 vendor/firmware/BT_FW.cfg
 vendor/lib64/libbluetooth_mtk.so
-vendor/lib64/libbluetooth_mtk_pure.so
 vendor/lib64/libbt-vendor.so
 
 # Bluetooth (Firmware) - from A145PXXU1AWA3
