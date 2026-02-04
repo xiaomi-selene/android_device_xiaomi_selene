@@ -83,6 +83,9 @@ on enable-low-power
     write /proc/cpufreq/cpufreq_sched_disable 0
     write /proc/sys/kernel/sched_migration_cost_ns 200000
 
+    # foreground
+    write /proc/perfmgr/boost_ctrl/eas_ctrl/perfserv_fg_uclamp_min 10
+
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
 
