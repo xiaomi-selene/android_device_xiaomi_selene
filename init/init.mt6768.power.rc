@@ -92,6 +92,15 @@ on enable-low-power
 on property:sys.boot_completed=1
     trigger enable-low-power
 
+service vendor.hwcomposer-2-1 /vendor/bin/hw/android.hardware.graphics.composer@2.1-service
+    class hal animation
+    user system
+    group graphics drmrpc
+    capabilities SYS_NICE
+    onrestart restart surfaceflinger
+    task_profiles HighPerformance
+    override
+
     # Power Hal
     chown system system /proc/ppm/policy/cluster_0_max_freq
     chown system system /proc/ppm/policy/cluster_0_min_freq
