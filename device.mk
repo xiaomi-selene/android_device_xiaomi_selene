@@ -164,6 +164,21 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder.vendor
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.mt6768 \
+    fstab.mt6768.ramdisk \
+    init.connectivity.rc \
+    init.fingerprint.rc \
+    init.modem.rc \
+    init.mt6768.rc \
+    init.mt6768.power.rc \
+    init.project.rc \
+    init.sensor_1_0.rc \
+    init.target.rc \
+    init.nfc.rc \
+    ueventd.mtk.rc
+
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
@@ -318,21 +333,6 @@ PRODUCT_PACKAGES += \
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.mt6768.rc
-
-# Rootdir
-PRODUCT_PACKAGES += \
-    fstab.mt6768 \
-    fstab.mt6768.ramdisk \
-    init.connectivity.rc \
-    init.fingerprint.rc \
-    init.modem.rc \
-    init.mt6768.rc \
-    init.mt6768.power.rc \
-    init.project.rc \
-    init.sensor_1_0.rc \
-    init.target.rc \
-    init.nfc.rc \
-    ueventd.mtk.rc
 
 # Runtime Resource (RRO) Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
